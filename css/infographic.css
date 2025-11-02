@@ -15,6 +15,17 @@
   position: relative;
 }
 
+.info-graphic-button {
+  cursor: pointer;
+  transition: transform 200ms linear;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+.info-graphic-button:hover {
+  transform: scale(1.2);
+}
+
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
@@ -59,4 +70,12 @@
 #circlechange1 svg {
   transform: scale(1.3);
   transform-origin: 45% 50%;
+}
+
+.info-text {
+  display: none;
+}
+
+.show {
+  display: block;
 }
