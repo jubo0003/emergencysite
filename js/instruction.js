@@ -1,7 +1,6 @@
 document.querySelector("#aarhus").addEventListener("click", changetext);
 
 function changetext() {
-  console.log("hejsa jeg virker");
   document.querySelector(".show").classList.remove("show");
   document.querySelector(".aarhus-text").classList.add("show");
 }
