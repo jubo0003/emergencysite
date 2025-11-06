@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,10 +37,254 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Har du set noget?</h2>
+          <p>
+            Ved at indrapportere en hændelse, hjælper du os med at de-eskalere
+            nødssituationen i Danmark. Vi samler og analysere data og
+            samarbejder med myndighederne om at skabe et overblik samt at
+            udarbejde en velovervejet handlingsplan. Desuden står vi til
+            rådighed for rådgivning for privatpersoner med relationer til hunde.
+          </p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <div class="grid-form-1">
+            <fieldset>
+              <legend>
+                <label for="fornavn">Fornavn</label>
+              </legend>
+              <input
+                type="text"
+                name="fornavn"
+                id="fornavn"
+                aria-describedby="error-fornavn"
+                required
+              />
+              <p class="errormsg" id="error-fornavn">Indtast dit fornavn</p>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <label for="efternavn">Efternavn</label>
+              </legend>
+              <input
+                type="text"
+                name="efternavn"
+                id="efternavn"
+                aria-describedby="error-efternavn required"
+              />
+              <p class="errormsg" id="error-efternavn">Indtast dit efternavn</p>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <label for="telefonnummer">Telefon</label>
+              </legend>
+              <input
+                type="numbers"
+                name="telefonnummer"
+                id="telefonnummer"
+                aria-describedby="error-telefon"
+                required
+              />
+              <p class="errormsg" id="error-telefon">
+                Indtast dit telefonnummer
+              </p>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <label for="email">Email</label>
+              </legend>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                aria-describedby="error-email"
+                required
+              />
+              <p class="errormsg" id="error-email">
+                Indtast din e-mail adresse
+              </p>
+            </fieldset>
+          </div>
+          <div class="grid-form-2">
+            <fieldset>
+              <legend>
+                <label for="dato">Dato for hændelsen</label>
+              </legend>
+              <input
+                type="date"
+                name="dato"
+                id="dato"
+                aria-describedby="error-dato"
+                required
+              />
+              <p class="errormsg" id="error-dato">Vælg dato for hændelsen</p>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <label for="vaelg-by">Hvor skete hændelsen</label>
+              </legend>
+              <select
+                name="vaelg-by"
+                name="vaelg-by"
+                id="vaelg-by"
+                aria-describedby="error-by"
+                required
+              >
+                <option value="kobenhavn">København</option>
+                <option value="aarhus">Aarhus</option>
+                <option value="odense">Odense</option>
+                <option value="aalborg">Aalborg</option>
+                <option value="esbjerg">Esbjerg</option>
+                <option value="randers">Randers</option>
+                <option value="kolding">Kolding</option>
+                <option value="horsens">Horsens</option>
+                <option value="vejle">Vejle</option>
+                <option value="roskilde">Roskilde</option>
+                <option value="herning">Herning</option>
+                <option value="horsholm">Hørsholm</option>
+                <option value="helsingor">Helsingør</option>
+                <option value="silkeborg">Silkeborg</option>
+                <option value="naestved">Næstved</option>
+                <option value="fredericia">Fredericia</option>
+                <option value="viborg">Viborg</option>
+                <option value="sonderborg">Sønderborg</option>
+                <option value="holstebro">Holstebro</option>
+                <option value="taastrup">Taastrup</option>
+                <option value="slagelse">Slagelse</option>
+                <option value="skive">Skive</option>
+                <option value="holbaek">Holbæk</option>
+                <option value="hjorring">Hjørring</option>
+                <option value="frederikshavn">Frederikshavn</option>
+                <option value="svendborg">Svendborg</option>
+                <option value="ringsted">Ringsted</option>
+                <option value="haderslev">Haderslev</option>
+                <option value="norresundby">Nørresundby</option>
+                <option value="nykobing-falster">Nykøbing Falster</option>
+                <option value="farum">Farum</option>
+                <option value="koge">Køge</option>
+                <option value="birkerod">Birkerød</option>
+                <option value="glostrup">Glostrup</option>
+                <option value="kalundborg">Kalundborg</option>
+                <option value="ikast">Ikast</option>
+                <option value="frederikssund">Frederikssund</option>
+                <option value="middelfart">Middelfart</option>
+                <option value="skanderborg">Skanderborg</option>
+                <option value="thisted">Thisted</option>
+                <option value="bronderslev">Brønderslev</option>
+                <option value="grindsted">Grindsted</option>
+                <option value="hillerod">Hillerød</option>
+                <option value="lemvig">Lemvig</option>
+                <option value="borkop">Børkop</option>
+                <option value="nibe">Nibe</option>
+                <option value="hornslet">Hornslet</option>
+                <option value="stenlose">Stenløse</option>
+                <option value="lyngby">Lyngby</option>
+                <option value="gentofte">Gentofte</option>
+              </select>
+              <p class="errormsg" id="error-by">Vælg by</p>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <label for="vaelg-region">I hvilken region</label>
+              </legend>
+              <select
+                name="vaelg-region"
+                id="vaelg-region"
+                aria-describedby="error-region"
+                required
+              >
+                <option value="hovedstaden">Hovedstaden</option>
+                <option value="midtjylland">Midtjylland</option>
+                <option value="nordjylland">Nordjylland</option>
+                <option value="syddanmark">Syddanmark</option>
+                <option value="sjaelland">Sjælland</option>
+              </select>
+              <p class="errormsg" id="error-region">Vælg region</p>
+            </fieldset>
+          </div>
+          <div class="grid-form-3">
+            <fieldset>
+              <legend>Er du ejer af hund indblandet?</legend>
+
+              <div>
+                <input type="radio" name="hundeejer" id="svarja" value="ja" />
+                <label for="svarja">Ja</label>
+              </div>
+
+              <div>
+                <input type="radio" name="hundeejer" id="svarnej" value="nej" />
+                <label for="svarnej">Nej</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <label for="hundensnavn"> Hvad er hundens navn? </label>
+              </legend>
+              <input
+                type="text"
+                id="hundensnavn"
+                name="hundensnavn"
+                aria-describedby="error-hundensnavn"
+              />
+              <p class="errormsg" id="error-hundensnavn">
+                Skriv den indblandede hunds navn
+              </p>
+            </fieldset>
+          </div>
+          <div class="grid-form-3">
+            <fieldset>
+              <legend>
+                <label for="beskriv">Beskriv hændelsen</label>
+                <input
+                  type="textarea"
+                  id="beskriv"
+                  name="haendelse"
+                  aria-describedby="beskriv-hvad"
+                  required
+                />
+              </legend>
+              <p class="errormsg" id="beskriv-hvad">
+                Beskriv hvad du har observeret
+              </p>
+            </fieldset>
+
+            <fieldset class="checkboxes">
+              <input
+                type="checkbox"
+                name="gdpr"
+                id="gdpr"
+                aria-describedby="gdpr-accept"
+                required
+              />
+              <label for="gdpr"
+                >Jeg accepterer, at mine oplysninger behandles i
+                overensstemmelse med Alarmen ApS' privatlivspolitik og jeg er
+                informeret om, at mine indsendte oplysninger (herunder
+                eventuelle personoplysninger) kan bruges til at registerere og
+                analysere hændelser i Danmark samt at videregive information til
+                offentlige myndigheder. Jeg kan til enhver tid anmode om indsigt
+                eller sletning af mine oplysninger.</label
+              >
+              <p class="errormsg" id="gdpr-accept">Dette felt skal afkrydses</p>
+            </fieldset>
+
+            <fieldset class="checkboxes">
+              <input type="checkbox" name="kontaktmig" id="kontakt" />
+              <label for="kontakt"
+                >Jeg giver samtykke til, at Alarmen ApS må kontakte mig via de
+                oplyste kontaktoplysninger med henblik på at afklare eller
+                afhjælpe den indsendte hændelse.</label
+              >
+            </fieldset>
+
+            <button>Indsend</button>
+          </div>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
