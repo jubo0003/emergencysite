@@ -259,6 +259,7 @@
                 name="gdpr"
                 id="gdpr"
                 aria-describedby="gdpr-accept"
+                value="ja"
                 required
               />
               <label for="gdpr"
@@ -274,22 +275,37 @@
             </fieldset>
 
             <fieldset class="checkboxes">
-              <input type="checkbox" name="kontaktmig" id="kontakt" />
+              <input
+                type="checkbox"
+                name="kontaktMig"
+                id="kontakt"
+                value="ja"
+              />
               <label for="kontakt"
                 >Jeg giver samtykke til, at Alarmen ApS må kontakte mig via de
                 oplyste kontaktoplysninger med henblik på at afklare eller
                 afhjælpe den indsendte hændelse.</label
               >
             </fieldset>
-
-            <button>Indsend</button>
+            <fieldset><input type="submit" /></fieldset>
           </div>
         </form>
       </section>
       <section id="form-summary">
-        <h2>Summary</h2>
+        <h2>Opsamling</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p>Fornavn: <span class="firstName"></span></p>
+          <p>Efternavn: <span class="lastName"></span></p>
+          <p>Telefonnummer: <span class="telephone"></span></p>
+          <p>E-mail: <span class="email"></span></p>
+          <p>Dato for hændelse: <span class="date"></span></p>
+          <p>By: <span class="city"></span></p>
+          <p>Region: <span class="region"></span></p>
+          <p>Er du ejer af hund?: <span class="owner"></span></p>
+          <p>Hundenavn: <span class="dogName"></span></p>
+          <p>Hændelse: <span class="incident"></span></p>
+          <p>Betingelser accepteret: <span class="accept"></span></p>
+          <p>Vil du kontaktes?: <span class="agree"></span></p>
         </article>
       </section>
     </main>
@@ -320,6 +336,8 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/forms.js"></script>
+
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

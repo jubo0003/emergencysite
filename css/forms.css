@@ -65,6 +65,7 @@
 
 .errormsg {
   display: none;
+  color: darkred;
 }
 
 input:user-invalid ~ .errormsg {
