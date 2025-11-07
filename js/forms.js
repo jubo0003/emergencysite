@@ -39,7 +39,7 @@ function handleSubmit(event) {
   document.querySelector(".dogName").textContent = dogName;
   document.querySelector(".incident").textContent = incident;
   document.querySelector(".accept").textContent = accept;
-  document.querySelector(".agree").textContent = agree;
+  document.querySelector(".agree").text.Content = agree;
 
   // 4. evt. nustil formular
   form.reset();
