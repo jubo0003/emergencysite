@@ -241,19 +241,19 @@
             <fieldset>
               <legend>
                 <label for="beskriv">Beskriv hændelsen</label>
-                <textarea
-                  id="beskriv"
-                  name="haendelse"
-                  aria-describedby="beskriv-hvad"
-                  required
-                ></textarea>
               </legend>
+              <textarea
+                id="beskriv"
+                name="haendelse"
+                aria-describedby="beskriv-hvad"
+                required
+              ></textarea>
               <p class="errormsg" id="beskriv-hvad">
                 Beskriv hvad du har observeret
               </p>
             </fieldset>
 
-            <fieldset id="checkboxes">
+            <fieldset class="checkboxes">
               <input
                 type="checkbox"
                 name="gdpr"
@@ -262,6 +262,7 @@
                 value="ja"
                 required
               />
+
               <label for="gdpr"
                 >Jeg accepterer, at mine oplysninger behandles i
                 overensstemmelse med Alarmen ApS' privatlivspolitik og jeg er
@@ -274,7 +275,7 @@
               <p class="errormsg" id="gdpr-accept">Dette felt skal afkrydses</p>
             </fieldset>
 
-            <fieldset id="checkboxes">
+            <fieldset class="checkboxes">
               <input
                 type="checkbox"
                 name="kontaktMig"
@@ -287,7 +288,9 @@
                 afhjælpe den indsendte hændelse.</label
               >
             </fieldset>
-            <fieldset><input type="submit" value="Indsend" /></fieldset>
+            <fieldset>
+              <input type="submit" id="submitbtn" value="Indsend" />
+            </fieldset>
           </div>
         </form>
       </section>
