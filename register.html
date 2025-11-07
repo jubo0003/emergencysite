@@ -210,12 +210,12 @@
             <fieldset>
               <legend>Er du ejer af hund indblandet?</legend>
 
-              <div>
+              <div class="radio-ejer">
                 <input type="radio" name="hundeejer" id="svarja" value="ja" />
                 <label for="svarja">Ja</label>
               </div>
 
-              <div>
+              <div class="radio-ejer">
                 <input type="radio" name="hundeejer" id="svarnej" value="nej" />
                 <label for="svarnej">Nej</label>
               </div>
@@ -240,20 +240,19 @@
             <fieldset>
               <legend>
                 <label for="beskriv">Beskriv hændelsen</label>
-                <input
-                  type="textarea"
+                <textarea
                   id="beskriv"
                   name="haendelse"
                   aria-describedby="beskriv-hvad"
                   required
-                />
+                ></textarea>
               </legend>
               <p class="errormsg" id="beskriv-hvad">
                 Beskriv hvad du har observeret
               </p>
             </fieldset>
 
-            <fieldset class="checkboxes">
+            <fieldset id="checkboxes">
               <input
                 type="checkbox"
                 name="gdpr"
@@ -274,7 +273,7 @@
               <p class="errormsg" id="gdpr-accept">Dette felt skal afkrydses</p>
             </fieldset>
 
-            <fieldset class="checkboxes">
+            <fieldset id="checkboxes">
               <input
                 type="checkbox"
                 name="kontaktMig"
@@ -287,7 +286,7 @@
                 afhjælpe den indsendte hændelse.</label
               >
             </fieldset>
-            <fieldset><input type="submit" /></fieldset>
+            <fieldset><input type="submit" value="Indsend" /></fieldset>
           </div>
         </form>
       </section>
