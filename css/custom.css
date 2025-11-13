@@ -14,7 +14,8 @@
   --color-menu-bg: #6f90eb;
   /* Links */
   --color-link-bg: #fffae2;
-  --color-link-hover: #fff; /* used */
+  --color-link-hover: #ffffff9e; /* used */
+  --color-logo-hover: rgba(255, 255, 255, 0.178);
   --color-link-active: #99958f; /* used */
   --border-radius-links: 37px;
 
