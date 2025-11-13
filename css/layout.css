@@ -82,3 +82,9 @@ footer ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.logosvg {
+  max-width: 140px;
+  max-height: 40px;
+  margin-left: 20px;
+}

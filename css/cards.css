@@ -68,6 +68,10 @@
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
+button {
+  border: none;
+}
+
 .news_card .cta_btn {
   justify-self: center;
 }
@@ -90,4 +94,36 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+[popover]:popover-open {
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  max-width: 65ch;
+  max-height: 650px;
+  margin: 50px auto;
+  overflow-y: auto;
+  border: none;
+  border-radius: 8px;
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.391);
+    backdrop-filter: blur(8px);
+  }
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary::after {
+  content: "+";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+[open] summary::after {
+  content: "–";
 }
