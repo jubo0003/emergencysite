@@ -86,5 +86,11 @@ footer ul {
 .logosvg {
   max-width: 140px;
   max-height: 40px;
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+details div {
+  display: grid;
+  gap: 5px;
+  padding: 20px 10px 0 0;
 }
