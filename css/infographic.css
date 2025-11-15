@@ -95,3 +95,7 @@
 .info-graphic-button:hover {
   transform: scale(1.2);
 }
+
+.infographic-image {
+  padding: 5px 5px 20px 5px;
+}
