@@ -94,3 +94,7 @@ details div {
   gap: 5px;
   padding: 20px 10px 0 0;
 }
+
+img-newscard {
+  padding: 10px;
+}
