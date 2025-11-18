@@ -1,5 +1,4 @@
 :root {
-  color-scheme: light;
   /* Colours */
   --color-bg: light-dark(#e9ede7, #302e2e); /* page background /*
 
@@ -46,6 +45,7 @@
   --color-news-bg-inverted: #444637;
   --color-cta-newscard-bg: #ffa680;
   --color-cta-newscard-bg-inverted: #e9ede7;
+  --color-news-text-inverted: #ffffff;
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -71,4 +71,8 @@
 
   --form-background-color: #ffffff;
   --form-input-color1: #dbe2f5;
+
+  /* buttons */
+
+  --color-btn: #e9ede7;
 }
