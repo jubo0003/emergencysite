@@ -172,3 +172,11 @@ footer a {
 #inverted-p {
   color: var(--color-cta-newscard-bg-inverted-p);
 }
+
+.daily_text {
+  padding: 0 10px;
+}
+
+.daily_text p {
+  padding: 0 3px;
+}
