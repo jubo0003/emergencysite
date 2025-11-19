@@ -1,20 +1,19 @@
 :root {
-  color-scheme: light;
   /* Colours */
   --color-bg: light-dark(#e9ede7, #302e2e); /* page background /*
 
   /* Header */
-  --color-head-bg: light-dark(#ab3d3f, #aa4c4d);
+  --color-head-bg: light-dark(#ab3d3f, #944243);
 
   /* Logotype */
-  --color-logotype-bg: light-dark(#000000, #000000);
+  --color-logotype-bg: light-dark(#202020, #202020);
   --color-text-logotype: #e9ede7;
   --font-logotype-size: 2rem;
 
   /* Global menu */
   --color-menu-bg: light-dark(#444637, #444637);
   /* Links */
-  --color-link-bg: #e9ede7;
+  --color-link-bg: light-dark(#e9ede7, #202020);
   --color-link-hover: #ffffff9e; /* used */
   --color-logo-hover: rgba(255, 255, 255, 0.178);
   --color-link-active: #99958f; /* used */
@@ -25,12 +24,12 @@
   --font-sub1-size: 1.3rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1.1rem;
-  --color-headline-bg: #000000;
-  --color-headline-text-page: #e9ede7;
+  --color-headline-bg: light-dark(#202020, #535252);
+  --color-headline-text-page: #ffffff;
 
   /* Tekst */
-  --color-text: #000000;
-  --color-text-inverted: #ffffff;
+  --color-text: light-dark(#000000, #e9ede7);
+  --color-text-inverted: #e9ede7;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -39,13 +38,15 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #ffffff;
+  --color-card-bg: light-dark(#ffffff, #414141);
   --color-cta-card-bg: #58634b;
   /* news-cards */
-  --color-news-bg: #ffffff;
-  --color-news-bg-inverted: #444637;
-  --color-cta-newscard-bg: #ffa680;
-  --color-cta-newscard-bg-inverted: #e9ede7;
+  --color-news-bg: light-dark(#ffffff, #414141);
+  --color-news-bg-inverted: light-dark(#444637, #535252);
+  --color-cta-newscard-bg: #ab3d3f;
+  --color-cta-newscard-bg-inverted: light-dark(#e9ede7, #58634b);
+  --color-news-text-inverted: #ffffff;
+  --color-cta-newscard-bg-inverted-p: #e9ede7;
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -65,10 +66,18 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #ffffff;
+  --color-info-bg: light-dark(#ffffff, #414141);
   --color-infobox-1-bg: #4e5743;
   --color-infobox-2-bg: #ffffff;
 
-  --form-background-color: #ffffff;
-  --form-input-color1: #dbe2f5;
+  --form-background-color: light-dark(#ffffff, #414141);
+  --form-input-color1: light-dark(#dedede, #737373);
+
+  /* buttons */
+
+  --color-btn: #e9ede7;
+
+  /* forms */
+
+  --error-red: light-dark(#8b0000, #cf5050);
 }
