@@ -76,4 +76,8 @@
   /* buttons */
 
   --color-btn: #e9ede7;
+
+  /* forms */
+
+  --error-red: light-dark(#8b0000, #cf5050);
 }
