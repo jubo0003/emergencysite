@@ -98,3 +98,9 @@ details div {
 img-newscard {
   padding: 10px;
 }
+
+#undtagelse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

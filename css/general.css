@@ -46,7 +46,8 @@ header {
 #main-disclamer-content {
   display: grid;
   grid-template-columns: 150px auto;
-  column-gap: 1rem;
+  column-gap: 5rem;
+  padding: 20px;
 }
 
 main section {
