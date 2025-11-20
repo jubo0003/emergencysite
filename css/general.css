@@ -23,7 +23,7 @@ html.dark {
   position: fixed;
   bottom: 35px;
   right: 40px;
-  filter: drop-shadow(1px 1px 3px #989898);
+  filter: drop-shadow(1px 1px 3px var(--dm-btn-backdrop));
 }
 
 .dm-lm {
@@ -31,6 +31,18 @@ html.dark {
   flex-direction: row;
   align-items: center;
   gap: 15px;
+}
+
+.sun {
+  display: none;
+}
+
+html.dark .sun {
+  display: block;
+}
+
+html.dark .moon {
+  display: none;
 }
 
 header {
