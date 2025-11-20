@@ -20,6 +20,10 @@ html.dark {
   border-radius: 35px;
   color: var(--color-btn);
   font-size: 0.9rem;
+  position: fixed;
+  bottom: 35px;
+  right: 40px;
+  filter: drop-shadow(1px 1px 3px #989898);
 }
 
 .dm-lm {
@@ -179,4 +183,13 @@ footer a {
 
 .daily_text p {
   padding: 0 3px;
+}
+
+option {
+  background-color: var(--background-select);
+}
+
+#toggle img {
+  max-height: 30px;
+  max-width: 30px;
 }
