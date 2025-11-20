@@ -88,7 +88,7 @@
 }
 
 .info-graphic-button:focus-visible {
-  outline: 4px solid var(--color-menu-bg);
+  outline: 4px solid var(--color-focus);
   border-radius: 100%;
 }
 
