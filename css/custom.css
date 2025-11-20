@@ -69,6 +69,7 @@
   --color-info-bg: light-dark(#ffffff, #414141);
   --color-infobox-1-bg: #4e5743;
   --color-infobox-2-bg: #ffffff;
+  --color-info-bg-text: #e9ede7;
   --color-focus: rgb(130, 130, 243);
   --background-infographic: light-dark(#e9ede7, #b7b7b7);
 
@@ -83,4 +84,6 @@
 
   --error-red: light-dark(#8b0000, #cf5050);
   --background-select: light-dark(#e9ede7, #515151);
+
+  --dm-btn-backdrop: light-dark(#6c6b6b, rgb(33, 33, 33));
 }
